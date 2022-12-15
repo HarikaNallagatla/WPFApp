@@ -1,0 +1,159 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="HomeScreen.xaml.cs" />
+    <Compile Remove="Sample.xaml.cs" />
+    <Compile Remove="Window1.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\60636-scan-passport-profile-page-verification-success.gif" />
+    <None Remove="Images\99031-passport-scanning.gif" />
+    <None Remove="Images\Afghanistan.png" />
+    <None Remove="Images\Afghanistan1.png" />
+    <None Remove="Images\Afghanistan2.png" />
+    <None Remove="Images\BoardingPass.jpg" />
+    <None Remove="Images\Carousel Images\Carousel Images.jfif" />
+    <None Remove="Images\Carousel Images\CarouselIMages1.jfif" />
+    <None Remove="Images\Carousel Images\CarouselImages3.jfif" />
+    <None Remove="Images\Carousel Images\CarouselImages4.jfif" />
+    <None Remove="Images\Carousel Images\CarouselImages5.jfif" />
+    <None Remove="Images\Footer.jfif" />
+    <None Remove="Images\Footer.jpg" />
+    <None Remove="Images\Footer4.jpg" />
+    <None Remove="Images\FooterAd.png" />
+    <None Remove="Images\HospitalAd.jpg" />
+    <None Remove="Images\Hotel Ad Banner.jpg" />
+    <None Remove="Images\Hotel Ad Banner.jpg" />
+    <None Remove="Images\leftarrow.png" />
+    <None Remove="Images\Hotel Ad Banner.jpg" />
+    <None Remove="Images\PassportPage.png" />
+    <None Remove="Images\PassportScan.jpg" />
+    <None Remove="Images\rightarrow.png" />
+    <None Remove="Images\Sample video.mp4" />
+    <None Remove="Images\ScanBoardingPass.jpg" />
+    <None Remove="Images\ScanPassport.jpg" />
+    <None Remove="Images\Spinner-1s-200px.gif" />
+    <None Remove="Images\WifiAccessCode.jpg" />
+    <None Remove="Images\WifiAccessConnection.jpg" />
+    <None Remove="Sample video.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="HomeScreen.xaml" />
+    <Page Remove="Sample.xaml" />
+    <Page Remove="Window1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\BoardingPass.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Carousel Images\Carousel Images.jfif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Carousel Images\CarouselIMages1.jfif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Carousel Images\CarouselImages3.jfif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Carousel Images\CarouselImages4.jfif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Carousel Images\CarouselImages5.jfif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Footer.jfif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Footer.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Footer4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\FooterAd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Hotel Ad Banner.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Hotel Ad Banner.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Hotel Ad Banner.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PassportScan.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\Sample video.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Images\ScanBoardingPass.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ScanPassport.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\WifiAccessCode.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\WifiAccessConnection.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.6.0.5131" />
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.6.0.5131" />
+    <PackageReference Include="IronOcr" Version="2022.11.10109" />
+    <PackageReference Include="OpenCvSharp4" Version="4.6.0.20220608" />
+    <PackageReference Include="WPFLocalizeExtension" Version="3.9.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Langs\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Langs\Resources.de-DE.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.de-DE.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Langs\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Langs\Resources.de-DE.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.de-DE.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
